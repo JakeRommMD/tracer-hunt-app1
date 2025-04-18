@@ -1,42 +1,43 @@
 Radionuclide,Radiopharmaceutical ,Uses,Mechanism of Localization,Critical Organ,Decay Mode,Major Emissions (MeV) and Percentage,Major Emissions (KeV),Half-life
-Carbon-11,Acetate,Prostate,Fatty acid analog – enters TCA cycle,,β+ (positron) decay,γ 0.511 (200%),511,20.3 min
-Nitrogen-13,Ammonia,Cardiac perfusion,Active transport via myocardial Na+/K+ ATPase,,β+ (positron) decay,γ 0.511 (200%),511,10 min
-Oxygen-15,Gas,Brain perfusion,Freely diffusible gas – reflects regional cerebral blood flow,,β+ (positron) decay,γ 0.511 (200%),511,124 sec
-Oxygen-15,Water,Metabolic agent,Diffusion – reflects regional blood flow,,β+ (positron) decay,γ 0.511 (200%),511,124 sec
-Fluorine-18 FDG,FDG (fluorodeoxyglucose),"Tumor, cardiac viability, brain metabolism, infection",Glucose analog – taken up by GLUT transporters and phosphorylated,,EC (electron capture) and β+ (positron) decay,γ 0.511 (194%),511,109 min
-Fluorine-18 FDG,Sodium,Bone,Ion exchange in bone matrix,,EC (electron capture) and β+ (positron) decay,γ 0.511 (194%),511,110 min
-Fluorine-18 FDG,Florbetapir,Amyloid,Binds to β-amyloid plaques in brain,,EC (electron capture) and β+ (positron) decay,γ 0.511 (194%),511,111 min
-Gallium-67,Citrate,"Infection, tumor",Binds to lactoferrin and siderophores at sites of inflammation,Bowel (colon),EC (electron capture),"γ 0.093 (38%), γ 0.184 (24%), γ 0.296 (16%), γ 0.388 (4%)","93, 184, 296, 388",78.1 hr
-Gallium-68,DOTATATE,Neuroendocrine tumor,Somatostatin receptor binding,,EC (electron capture) and β+ (positron) decay,"γ 0.511 (178%), γ 1.077 (3%)","511, 1077",68.3 min
-Krypton-81m,Gas,Pulmonary ventilation,Inhalation and distribution via ventilation,,IT (isomeric transition),γ 0.191 (66%),191,13 sec
-Rubidium-82,Chloride,Myocardial perfusion,Potassium analog – active transport into myocardium,,EC (electron capture) and β+ (positron) decay,"γ 0.511 (189%), γ 0.777 (13%)","511, 777",1.3 min
-Technetium-99m,MDP (Medronate or Diphosphonate),Bone,Chemisorption to hydroxyapatite in bone,Bladder (some say bone),IT (isomeric transition),γ 0.140 (88%),140,6.03 hr
-Technetium-99m,DISIDA (diisopropyl iminodiacetic acid),Biliary,Hepatocyte uptake and biliary excretion,Gallbladder wall,IT (isomeric transition),γ 0.140 (88%),140,6.03 hr
-Technetium-99m,DMSA (dimercaptosuccinic acid),Renal cortical,Cortical binding in proximal renal tubules,Renal cortex,IT (isomeric transition),γ 0.140 (88%),140,6.03 hr
-Technetium-99m,DTPA (diethylenetriamine pentaacetic acid),"Renal dynamic, brain, lung ventilation","Glomerular filtration (renal), CSF distribution (brain), aerosol deposition (lung)",,IT (isomeric transition),γ 0.140 (88%),140,6.03 hr
-Technetium-99m,ECD (ethyl cysteinate dimmer),Brain perfusion,Lipophilic compound crosses BBB and retained in brain; rapid clearance from blood pool.,,IT (isomeric transition),γ 0.140 (88%),140,6.03 hr
-Technetium-99m,Glucoheptonate,"Brain, renal dynamic",Filtered by glomeruli and partially reabsorbed,,IT (isomeric transition),γ 0.140 (88%),140,6.03 hr
-Technetium-99m,HMPAO (hexamethylpropyleneamine oxine),Brain perfusion,Crosses BBB while in lipophilic state. Gets metabolized to to hydrophilic form and is trapped in neurons. Accumulates in high-blood flow regions of the brain.,,IT (isomeric transition),γ 0.140 (88%),140,6.03 hr
-Technetium-99m,HMPAO labeled white cells,Infection,Phagocytosis by neutrophils at infection sites,,IT (isomeric transition),γ 0.140 (88%),140,6.03 hr
-Technetium-99m,Labeled red cells,"Gastrointestinal (GI) blood loss, cardiac function, hepatic hemangioma",Compartmental localization within vascular pool,Spleen,IT (isomeric transition),γ 0.140 (88%),140,6.03 hr
-Technetium-99m,MAA (macroaggregated albumin),"Lung perfusion, LeVeen shunt patency, intraarterial liver",Capillary blockade,,IT (isomeric transition),γ 0.140 (88%),140,6.03 hr
-Technetium-99m,MAG3 (mercaptoacetyltriglycine),Renal,Tubular secretion via OAT transporters,Bladder,IT (isomeric transition),γ 0.140 (88%),140,6.03 hr
-Technetium-99m,Mebrofenin,Biliary,Hepatocyte uptake and biliary excretion,,IT (isomeric transition),γ 0.140 (88%),140,6.03 hr
-Technetium-99m,Pertechnetate,"Thyroid, salivary glands, Meckel diverticulum, testicular",Transported into glands via sodium-iodide symporter (ie; trapped but not organified),Stomach,IT (isomeric transition),γ 0.140 (88%),140,6.03 hr
-Technetium-99m,Sestamibi,"Myocardial perfusion, parathyroid, breast",Passive diffusion and mitochondrial uptake,Proximal colon,IT (isomeric transition),γ 0.140 (88%),140,6.03 hr
-Technetium-99m,Sulfur colloid,"Liver/spleen, red bone marrow, esophageal transit, gastric emptying",Phagocytosis by RES macrophages,Proximal colon (oral) and liver (IV),IT (isomeric transition),γ 0.140 (88%),140,6.03 hr
-Technetium-99m,Sulfur colloid (filtered),Lymphoscintigraphy,Transport via lymphatics following interstitial injection,,IT (isomeric transition),γ 0.140 (88%),140,6.03 hr
-Technetium-99m,Tetrofosmin,Myocardial perfusion,Passive diffusion and mitochondrial uptake,,IT (isomeric transition),γ 0.140 (88%),140,6.03 hr
-Indium-111,DTPA,"Cerebrospinal fluid (CSF) flow, gastric liquid emptying","CSF flow (injected intrathecally), extracellular space (oral for gastric studies)",,EC (electron capture),"γ 0.172 (90%), γ 0.247 (94%)","172, 247",67 hr
-Indium-111,Oxine labeled white cells,Infection,"Phagocytosis by leukocytes, localizes to infection sites",Spleen,EC (electron capture),"γ 0.172 (90%), γ 0.247 (94%)","172, 247",67 hr
-Indium-111,Pentetreotide,Somatostatin receptor tumors,Somatostatin receptor binding,Spleen,EC (electron capture),"γ 0.172 (90%), γ 0.247 (94%)","172, 247",67 hr
-Iodine-123,Sodium,Thyroid,Trapped in thyroid via sodium-iodide symporter,,EC (electron capture),γ 0.159 (83%),159,13 hr
-Iodine-123,MIBG (metaiodobenzylguanidine),"Pheochromocytoma, adrenal medullary, neural crest tumors","Uptake via norepinephrine transporters, stored in neurosecretory granules.",Bladder (if thyroid appropriately blocked),EC (electron capture),γ 0.159 (83%),159,13 hr
-Iodine-131,Sodium,Thyroid cancer,Trapped in thyroid tissue and incorporated into thyroglobulin,,β- (electron) decay,"γ 0.364 (82%), β 0.192 (90%)",364,8.06 day
-Xenon-133,Gas,Lung ventilation,Inhaled gas – reflects regional ventilation,,β- (electron) decay,γ 0.145 (4%),,36.4 day
-Thallium-201,Chloride,Myocardial perfusion,Transported across the myocardial cell membrane via the Na+–K+ ATPase pump,Renal cortex,EC (electron capture),"γ 0.135 (2%), γ 0.167 (8%), (Hg daughter x-rays 0.069–0.081)
+Carbon-11,Carbon-11 Acetate,Prostate,Fatty acid analog – enters TCA cycle,,β+ (positron) decay,γ 0.511 (200%),511,20.3 min
+Nitrogen-13,Nitrogen-13 Ammonia,Cardiac perfusion,Active transport via myocardial Na+/K+ ATPase,,β+ (positron) decay,γ 0.511 (200%),511,10 min
+Oxygen-15,Oxygen-15 Gas,Brain perfusion,Freely diffusible gas – reflects regional cerebral blood flow,,β+ (positron) decay,γ 0.511 (200%),511,124 sec
+Oxygen-15,Oxygen-15 Water,Metabolic agent,Diffusion – reflects regional blood flow,,β+ (positron) decay,γ 0.511 (200%),511,124 sec
+Fluorine-18 ,Fluorine-18 FDG (fluorodeoxyglucose),"Tumor, cardiac viability, brain metabolism, infection",Glucose analog – taken up by GLUT transporters and phosphorylated,,EC (electron capture) and β+ (positron) decay,γ 0.511 (194%),511,110 min
+Fluorine-18 ,Fluorine-18 Sodium Fluoride ,Bone,Ion exchange in bone matrix,,EC (electron capture) and β+ (positron) decay,γ 0.511 (194%),511,110 min
+Fluorine-18 ,Fluorine-18 Florbetapir,Amyloid,Binds to β-amyloid plaques in brain,,EC (electron capture) and β+ (positron) decay,γ 0.511 (194%),511,110 min
+Gallium-67,Gallium-67 Citrate,"Infection, tumor",Binds to lactoferrin and siderophores at sites of inflammation,Bowel (colon),EC (electron capture),"γ 0.093 (38%), γ 0.184 (24%), γ 0.296 (16%), γ 0.388 (4%)","93, 184, 296, 388",78.1 hr
+Gallium-68,Gallium-68 DOTATATE,Neuroendocrine tumor,Somatostatin receptor binding,,EC (electron capture) and β+ (positron) decay,"γ 0.511 (178%), γ 1.077 (3%)",511,68.3 min
+Krypton-81m,Krypton-81m Gas,Pulmonary ventilation,Inhalation and distribution via ventilation,,IT (isomeric transition),γ 0.191 (66%),191,13 sec
+Rubidium-82,Rubidium-82 Chloride,Myocardial perfusion,Potassium analog – active transport into myocardium,,EC (electron capture) and β+ (positron) decay,"γ 0.511 (189%), γ 0.777 (13%)","511, 777",1.3 min
+Technetium-99m,Technetium-99m MDP (Medronate or Diphosphonate),Bone,Chemisorption to hydroxyapatite in bone,Bladder (some say bone),IT (isomeric transition),γ 0.140 (88%),140,6.03 hr
+Technetium-99m,Technetium-99m DISIDA (diisopropyl iminodiacetic acid),Biliary,Hepatocyte uptake and biliary excretion,Gallbladder wall,IT (isomeric transition),γ 0.140 (88%),140,6.03 hr
+Technetium-99m,Technetium-99m DMSA (dimercaptosuccinic acid),Renal cortical,Cortical binding in proximal renal tubules,Renal cortex,IT (isomeric transition),γ 0.140 (88%),140,6.03 hr
+Technetium-99m,Technetium-99m DTPA (diethylenetriamine pentaacetic acid),"Renal dynamic, brain, lung ventilation","Glomerular filtration (renal), CSF distribution (brain), aerosol deposition (lung)",Bladder ,IT (isomeric transition),γ 0.140 (88%),140,6.03 hr
+Technetium-99m,Technetium-99m ECD (ethyl cysteinate dimmer),Brain perfusion,Lipophilic compound crosses BBB and retained in brain; rapid clearance from blood pool.,,IT (isomeric transition),γ 0.140 (88%),140,6.03 hr
+Technetium-99m,Technetium-99m Glucoheptonate,"Brain, renal dynamic",Filtered by glomeruli and partially reabsorbed,,IT (isomeric transition),γ 0.140 (88%),140,6.03 hr
+Technetium-99m,Technetium-99m HMPAO (hexamethylpropyleneamine oxine),Brain perfusion,Crosses BBB while in lipophilic state. Gets metabolized to to hydrophilic form and is trapped in neurons. Accumulates in high-blood flow regions of the brain.,,IT (isomeric transition),γ 0.140 (88%),140,6.03 hr
+Technetium-99m,Technetium-99m HMPAO labeled white cells,Infection,Phagocytosis by neutrophils at infection sites,,IT (isomeric transition),γ 0.140 (88%),140,6.03 hr
+Technetium-99m,Technetium-99m Labeled red cells,"Gastrointestinal (GI) blood loss, cardiac function, hepatic hemangioma",Compartmental localization within vascular pool,Spleen,IT (isomeric transition),γ 0.140 (88%),140,6.03 hr
+Technetium-99m,Technetium-99m MAA (macroaggregated albumin),"Lung perfusion, LeVeen shunt patency, intraarterial liver",Capillary blockade,,IT (isomeric transition),γ 0.140 (88%),140,6.03 hr
+Technetium-99m,Technetium-99m MAG3 (mercaptoacetyltriglycine),Renal,Tubular secretion via OAT transporters,Bladder,IT (isomeric transition),γ 0.140 (88%),140,6.03 hr
+Technetium-99m,Technetium-99m Mebrofenin,Biliary,Hepatocyte uptake and biliary excretion,,IT (isomeric transition),γ 0.140 (88%),140,6.03 hr
+Technetium-99m,Technetium-99m Pertechnetate,"Thyroid, salivary glands, Meckel diverticulum, testicular",Transported into glands via sodium-iodide symporter (ie; trapped but not organified),Stomach,IT (isomeric transition),γ 0.140 (88%),140,6.03 hr
+Technetium-99m,Technetium-99m Sestamibi,"Myocardial perfusion, parathyroid, breast",Passive diffusion and mitochondrial uptake,Proximal colon,IT (isomeric transition),γ 0.140 (88%),140,6.03 hr
+Technetium-99m,Technetium-99m Sulfur colloid,"Liver/spleen, red bone marrow, esophageal transit, gastric emptying",Phagocytosis by RES macrophages,Proximal colon (oral) and liver (IV),IT (isomeric transition),γ 0.140 (88%),140,6.03 hr
+Technetium-99m,Technetium-99m Sulfur colloid (filtered),Lymphoscintigraphy,Transport via lymphatics following interstitial injection,,IT (isomeric transition),γ 0.140 (88%),140,6.03 hr
+Technetium-99m,Technetium-99m Tetrofosmin,Myocardial perfusion,Passive diffusion and mitochondrial uptake,,IT (isomeric transition),γ 0.140 (88%),140,6.03 hr
+Indium-111,Indium-111 DTPA (diethylenetriamine pentaacetic acid),"Cerebrospinal fluid (CSF) flow, gastric liquid emptying","CSF flow (injected intrathecally), extracellular space (oral for gastric studies)",,EC (electron capture),"γ 0.172 (90%), γ 0.247 (94%)","172, 247",67 hr
+Indium-111,Indium-111 Oxine labeled white cells,Infection,"Phagocytosis by leukocytes, localizes to infection sites",Spleen,EC (electron capture),"γ 0.172 (90%), γ 0.247 (94%)","172, 247",67 hr
+Indium-111,Indium-111 Pentetreotide,Somatostatin receptor tumors,Somatostatin receptor binding,Spleen,EC (electron capture),"γ 0.172 (90%), γ 0.247 (94%)","172, 247",67 hr
+Iodine-123,Iodine-123 Sodium,Thyroid,Trapped in thyroid via sodium-iodide symporter,,EC (electron capture),γ 0.159 (83%),159,13 hr
+Iodine-123,Iodine-123 MIBG (metaiodobenzylguanidine),"Pheochromocytoma, adrenal medullary, neural crest tumors","Uptake via norepinephrine transporters, stored in neurosecretory granules.",Bladder (if thyroid appropriately blocked),EC (electron capture),γ 0.159 (83%),159,13 hr
+Iodine-131,Iodine-131 Sodium,Thyroid cancer,Trapped in thyroid tissue and incorporated into thyroglobulin,,β- (electron) decay,"γ 0.364 (82%), β 0.192 (90%)",364,8.06 day
+Xenon-133,Xenon-133 Gas,Lung ventilation,Inhaled gas – reflects regional ventilation,,β- (electron) decay,γ 0.145 (4%),81,5.25 day
+Thallium-201,Thallium-201 Chloride,Myocardial perfusion,Transported across the myocardial cell membrane via the Na+–K+ ATPase pump,Renal cortex,EC (electron capture),"γ 0.135 (2%), γ 0.167 (8%), (Hg daughter x-rays 0.069–0.081)
 x-rays 0.069–0.081)","135, 167",73 hr
-Yttrium-90,,Treatment. Radioembolization of liver tumors or refractory NH-lymphoma.,,,β- (electron) decay,β 0.93 (99%),930,64 hr
+Yttrium-90,Yttrium-90 Chloride,Treatment. Radioembolization of liver tumors or refractory NH-lymphoma.,,,β- (electron) decay,β 0.93 (99%),930,64 hr
+Lutetium-77,,,,,,,"133, 210",6.73 days
 Cesium-137,,,,,β- (electron) decay,γ 0.660 (85%),660,30 yr
 Cobalt-57,,,,,EC (electron capture),"γ 0.122 (86%), γ 0.136 (11%)","122, 136",270 day
 Cobalt-58,,,,,EC (electron capture) and β+ (positron) decay,"γ 0.811 (99%), γ 0.511 (31%)","811, 511",71.3 day
