@@ -1,166 +1,153 @@
 # nucmed_trivia_app.py
 """
-Nuclear Medicine Trivia Trainer
---------------------------------
-Streamlit web app with three mini‑games to drill radiopharmaceutical factoids.
-
-Mini‑games
-===========
-1. **Flashcards** – simple front/back reveal.
-2. **Multiple Choice** – classic 4‑option quiz.
-3. **Match‑Up** – interactive matching of 1–3 columns with shuffle, retry,
-   colour feedback per cell, non‑wrapping & padded row labels, and stable
-   dropdowns that work across reruns.
-
-Quick start
------------
-```bash
-pip install streamlit pandas
-streamlit run nucmed_trivia_app.py
-```
+Nuclear Medicine Trivia Trainer – progress‑aware
+------------------------------------------------
+* Flashcards & MCQ: progress bar, balloons at 100 %.
+* Match‑Up: dropdown matching with per‑cell ✅/❌, shuffle/retry.
+* All state flags unified (`match_submitted`).
 """
 
 from __future__ import annotations
 import random
 from typing import List, Dict
-
 import pandas as pd
 import streamlit as st
 
 st.set_page_config(page_title="NucMed Trivia Trainer", page_icon="☢️", layout="centered")
 
 # ---------------------------------------------------------------------
-# Load CSV
+# Load CSV + stable row IDs
 # ---------------------------------------------------------------------
 @st.cache_data
 def load_data(uploaded_file=None):
-    df = pd.read_csv(uploaded_file) if uploaded_file else pd.read_csv("radionuclides_radiopharmaceuticals_master.csv")
+    df = pd.read_csv(uploaded_file) if uploaded_file else pd.read_csv(
+        "radionuclides_radiopharmaceuticals_master.csv")
     df.columns = df.columns.str.strip()
+    df = df.reset_index().rename(columns={"index": "__row_id"})
     return df
 
 df = load_data(st.sidebar.file_uploader("⬆️ Upload a custom CSV (optional)", type="csv"))
 columns: List[str] = [c for c in df.columns if df[c].notna().any()]
 if df.empty:
-    st.error("CSV appears empty – please upload a valid file.")
+    st.error("CSV is empty – please upload a valid file.")
     st.stop()
 
+total_rows = len(df)
+
 # ---------------------------------------------------------------------
-# Session‑state helpers
+# State helpers
 # ---------------------------------------------------------------------
 
-def init_flashcards():
+def init_flash():
     st.session_state.deck = df.sample(frac=1).to_dict("records")
     st.session_state.qnum = 0
 
-def next_flashcard():
+def next_flash():
     st.session_state.qnum = (st.session_state.qnum + 1) % len(st.session_state.deck)
 
 
 def reset_mcq():
     st.session_state.mcq_submitted = False
-    st.session_state.mcq_feedback_msg = ""
-    st.session_state.mcq_feedback_type = "info"
-    st.session_state.mcq_option_bank = {}
-    st.session_state.score = 0
+    st.session_state.mcq_msg = ""
+    st.session_state.mcq_type = "info"
+    st.session_state.mcq_opts = {}
 
 
-def init_match(shuffle_rows: bool = True):
-    if shuffle_rows or "match_rows" not in st.session_state:
-        st.session_state.match_rows = df.sample(n=min(6, len(df))).reset_index(drop=True)
-    st.session_state.match_choice = {}   # (row_idx, col) -> choice
+def init_match(shuffle=True):
+    if shuffle or "match_rows" not in st.session_state:
+        st.session_state.match_rows = df.sample(n=min(6, total_rows)).reset_index(drop=True)
+    st.session_state.match_choice = {}
     st.session_state.match_submitted = False
 
-# bootstrap state once -------------------------------------------------
+# Global ledgers
+st.session_state.setdefault("seen", {})          # mode_key -> set(row_ids)
+st.session_state.setdefault("celebrated", set()) # balloons already shown
+
+# Bootstrap
 if "deck" not in st.session_state:
-    init_flashcards()
-if "mcq_submitted" not in st.session_state:
-    reset_mcq()
-if "match_rows" not in st.session_state:
-    init_match()
+    init_flash(); reset_mcq(); init_match()
 
 # ---------------------------------------------------------------------
 # Sidebar
 # ---------------------------------------------------------------------
-GAME_TYPES = ["Flashcards", "Multiple Choice", "Match‑Up"]
-
-st.sidebar.title("⚡ Game Controls")
-game_type = st.sidebar.selectbox("Choose a game", GAME_TYPES)
-
+game = st.sidebar.selectbox("Choose a game", ["Flashcards", "Multiple Choice", "Match‑Up"])
 if st.sidebar.button("🔄 Reset All"):
-    init_flashcards()
-    reset_mcq()
-    init_match()
+    init_flash(); reset_mcq(); init_match(); st.session_state.seen = {}; st.session_state.celebrated = set()
 
-st.sidebar.markdown(f"**MCQ Score:** {st.session_state.get('score', 0)}")
+# Helper: progress bar -------------------------------------------------
+
+def show_progress(key):
+    seen = len(st.session_state.seen.get(key, set()))
+    val = min(seen / total_rows, 1.0)
+    st.progress(val, text=f"Reviewed {seen}/{total_rows}")
+    if val == 1.0:
+        if key not in st.session_state.celebrated:
+            st.session_state.celebrated.add(key)
+            st.balloons(); st.success("🎉 Completed!")
+        else:
+            st.success("Completed ✔")
 
 # ---------------------------------------------------------------------
-# FLASHCARDS
+# Flashcards
 # ---------------------------------------------------------------------
-if game_type == "Flashcards":
+if game == "Flashcards":
     st.header("Flashcards 🃏")
-    front = st.sidebar.selectbox("Field on the front:", columns,
-                                 index=columns.index("Radiopharmaceutical ") if "Radiopharmaceutical " in columns else 0)
-    back_opts = [c for c in columns if c != front]
-    back = st.sidebar.selectbox("Field on the back:", back_opts,
-                                index=back_opts.index("Uses") if "Uses" in back_opts else 0)
+    front = st.sidebar.selectbox("Front field", columns, index=columns.index("Radiopharmaceutical ") if "Radiopharmaceutical " in columns else 0)
+    backs = [c for c in columns if c != front]
+    back = st.sidebar.selectbox("Back field", backs, index=backs.index("Uses") if "Uses" in backs else 0)
+
+    key = ("flash", front, back)
+    st.session_state.seen.setdefault(key, set())
+    show_progress(key)
 
     card = st.session_state.deck[st.session_state.qnum]
     st.markdown(f"### **{card.get(front, 'N/A')}**")
-    with st.expander("Show Answer"):
+    with st.expander("Show answer"):
         st.markdown(card.get(back, "—") or "—")
-    st.button("Next ▶", on_click=next_flashcard)
+
+    if st.button("Next ▶"):
+        st.session_state.seen[key].add(card["__row_id"])
+        next_flash(); st.rerun()
 
 # ---------------------------------------------------------------------
-# MULTIPLE CHOICE
+# Multiple Choice
 # ---------------------------------------------------------------------
-elif game_type == "Multiple Choice":
+elif game == "Multiple Choice":
     st.header("Multiple Choice 🎯")
-    col_q = st.sidebar.selectbox("Ask about:", columns,
-                                 index=columns.index("Radiopharmaceutical ") if "Radiopharmaceutical " in columns else 0)
-    col_a = st.sidebar.selectbox("Identify:", [c for c in columns if c != col_q],
-                                 index=columns.index("Uses") if "Uses" in columns and col_q != "Uses" else 0)
+    col_q = st.sidebar.selectbox("Ask about", columns, index=columns.index("Radiopharmaceutical ") if "Radiopharmaceutical " in columns else 0)
+    col_a = st.sidebar.selectbox("Identify", [c for c in columns if c != col_q], index=columns.index("Uses") if "Uses" in columns and col_q != "Uses" else 0)
 
-    qkey = (st.session_state.qnum, col_q, col_a)
-    if qkey not in st.session_state.mcq_option_bank:
-        row = st.session_state.deck[st.session_state.qnum]
+    key = ("mcq", col_q, col_a)
+    st.session_state.seen.setdefault(key, set())
+    show_progress(key)
+
+    row = st.session_state.deck[st.session_state.qnum]; rid = row["__row_id"]
+    qkey = (rid, col_q, col_a)
+    if qkey not in st.session_state.mcq_opts:
         correct = row.get(col_a, "")
-        distractors = df[col_a].dropna().loc[lambda s: s != correct].unique().tolist()
-        random.shuffle(distractors)
-        options = distractors[:3] + [correct]
-        random.shuffle(options)
-        st.session_state.mcq_option_bank[qkey] = {"options": options, "answer": correct}
+        distract = df[col_a].dropna().loc[lambda s: s != correct].unique().tolist(); random.shuffle(distract)
+        st.session_state.mcq_opts[qkey] = random.sample(distract, k=min(3, len(distract))) + [correct]
+    opts = st.session_state.mcq_opts[qkey]
 
-    options = st.session_state.mcq_option_bank[qkey]["options"]
-    correct = st.session_state.mcq_option_bank[qkey]["answer"]
-    row = st.session_state.deck[st.session_state.qnum]
+    st.markdown(f"**{col_q}:**"); st.markdown(row.get(col_q, ""))
+    choice = st.radio("Choose", opts, key=f"mcq{rid}", disabled=st.session_state.mcq_submitted)
 
-    st.markdown(f"**{col_q}:**  ")
-    st.markdown(row.get(col_q, ""))
-
-    choice = st.radio("Select the correct answer:", options,
-                      key=f"mcq_choice_{st.session_state.qnum}",
-                      disabled=st.session_state.mcq_submitted)
-
-    if st.session_state.mcq_feedback_msg:
-        (st.success if st.session_state.mcq_feedback_type == "success" else st.error)(st.session_state.mcq_feedback_msg)
+    if st.session_state.mcq_msg:
+        (st.success if st.session_state.mcq_type == "success" else st.error)(st.session_state.mcq_msg)
 
     if not st.session_state.mcq_submitted and st.button("Submit ✅"):
         st.session_state.mcq_submitted = True
-        if choice == correct:
-            st.session_state.score += 1
-            st.session_state.mcq_feedback_type = "success"
-            st.session_state.mcq_feedback_msg = "Correct!"
+        st.session_state.seen[key].add(rid)
+        if choice == row.get(col_a, ""):
+            st.session_state.mcq_type = "success"; st.session_state.mcq_msg = "Correct!"
         else:
-            st.session_state.mcq_feedback_type = "error"
-            st.session_state.mcq_feedback_msg = f"Incorrect. **Correct answer:** {correct}"
+            st.session_state.mcq_type = "error"; st.session_state.mcq_msg = f"Incorrect. Correct: {row.get(col_a, '')}"
         st.rerun()
     elif st.session_state.mcq_submitted and st.button("Next ▶"):
-        next_flashcard()
-        reset_mcq()
-        st.rerun()
+        reset_mcq(); next_flash(); st.rerun()
 
 # ---------------------------------------------------------------------
-# MATCH‑UP
+# MATCH‑UP  (unchanged logic, no progress bar—game has its own score)
 # ---------------------------------------------------------------------
 else:
     st.header("Match‑Up 🧩")
@@ -176,7 +163,7 @@ else:
     )
 
     if st.sidebar.button("Shuffle 🔀"):
-        init_match(shuffle_rows=True)
+        init_match(shuffle=True)
         # also reset pools so they reshuffle once
         st.session_state.pop("match_answer_pools", None)
 
@@ -251,6 +238,8 @@ else:
         if st.button("Retry 🔄"):
             init_match(shuffle_rows=False)
             st.rerun()
+            
+    st.info("Click Shuffle on the side bar to get a new batch to match!")
 
 # ---------------------------------------------------------------------
 # Footer

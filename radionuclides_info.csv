@@ -1,0 +1,44 @@
+Radionuclide,Production Method,Radiopharmaceutical ,Uses,Mechanism of Localization,Normal distribution,Critical Organ,Decay Mode,Major Emissions (KeV),Half-life
+Fluorine-18 ,Cyclotron,Fluorine-18 FDG (fluorodeoxyglucose),"Tumor, cardiac viability, brain metabolism, infection",Glucose analog – taken up by GLUT transporters and phosphorylated,,,EC (electron capture) and β+ (positron) decay,511,110 min
+Fluorine-18 ,Cyclotron,Fluorine-18 Sodium Fluoride ,Bone,Ion exchange in bone matrix,,,EC (electron capture) and β+ (positron) decay,511,110 min
+Fluorine-18 ,Cyclotron,Fluorine-18 Florbetapir,Amyloid,Binds to β-amyloid plaques in brain,,,EC (electron capture) and β+ (positron) decay,511,110 min
+Gallium-67,Cyclotron,Gallium-67 Citrate,"Infection, tumor",Binds to lactoferrin and siderophores at sites of inflammation,,Bowel (colon),EC (electron capture),"93, 184, 296, 388",78.1 hr
+Gallium-68,Cyclotron,Gallium-68 DOTATATE,Neuroendocrine tumor,Somatostatin receptor binding,,,EC (electron capture) and β+ (positron) decay,511,68.3 min
+Technetium-99m,Generator,Technetium-99m MDP (Medronate or Diphosphonate),Bone,Chemisorption to hydroxyapatite in bone,"Bones, renal excretion, can bind calcium phosphate crystals which precipitate in some tissues",Bladder (some say bone),IT (isomeric transition),140,6.03 hr
+Technetium-99m,Generator,Technetium-99m DISIDA (diisopropyl iminodiacetic acid),Biliary,Hepatocyte uptake and biliary excretion,,Gallbladder wall,IT (isomeric transition),140,6.03 hr
+Technetium-99m,Generator,Technetium-99m DMSA (dimercaptosuccinic acid),Renal cortical,Cortical binding in proximal renal tubules,,Renal cortex,IT (isomeric transition),140,6.03 hr
+Technetium-99m,Generator,Technetium-99m DTPA (diethylenetriamine pentaacetic acid),"Renal dynamic, brain, lung ventilation","Glomerular filtration (renal), CSF distribution (brain), aerosol deposition (lung)",,Bladder ,IT (isomeric transition),140,6.03 hr
+Technetium-99m,Generator,Technetium-99m ECD (ethyl cysteinate dimmer),Brain perfusion,Lipophilic compound crosses BBB and retained in brain; rapid clearance from blood pool.,,,IT (isomeric transition),140,6.03 hr
+Technetium-99m,Generator,Technetium-99m Glucoheptonate,"Brain, renal dynamic",Filtered by glomeruli and partially reabsorbed,,,IT (isomeric transition),140,6.03 hr
+Technetium-99m,Generator,Technetium-99m HMPAO (hexamethylpropyleneamine oxine),Brain perfusion,Crosses BBB while in lipophilic state. Gets metabolized to to hydrophilic form and is trapped in neurons. Accumulates in high-blood flow regions of the brain.,,,IT (isomeric transition),140,6.03 hr
+Technetium-99m,Generator,Technetium-99m HMPAO labeled white cells,Infection,Phagocytosis by neutrophils at infection sites,,,IT (isomeric transition),140,6.03 hr
+Technetium-99m,Generator,Technetium-99m Labeled red cells,"Gastrointestinal (GI) blood loss, cardiac function, hepatic hemangioma",Compartmental localization within vascular pool,,Spleen,IT (isomeric transition),140,6.03 hr
+Technetium-99m,Generator,Technetium-99m MAA (macroaggregated albumin),"Lung perfusion, LeVeen shunt patency, intraarterial liver",Capillary blockade,,,IT (isomeric transition),140,6.03 hr
+Technetium-99m,Generator,Technetium-99m MAG3 (mercaptoacetyltriglycine),Renal,Tubular secretion via OAT transporters,,Bladder,IT (isomeric transition),140,6.03 hr
+Technetium-99m,Generator,Technetium-99m Mebrofenin,Biliary,Hepatocyte uptake and biliary excretion,,,IT (isomeric transition),140,6.03 hr
+Technetium-99m,Generator,Technetium-99m Pertechnetate,"Thyroid, salivary glands, Meckel diverticulum, testicular",Transported into glands via sodium-iodide symporter (ie; trapped but not organified),,Stomach,IT (isomeric transition),140,6.03 hr
+Technetium-99m,Generator,Technetium-99m Sestamibi,"Myocardial perfusion, parathyroid, breast",Passive diffusion and mitochondrial uptake,,Proximal colon,IT (isomeric transition),140,6.03 hr
+Technetium-99m,Generator,Technetium-99m Sulfur colloid,"Liver/spleen, red bone marrow, esophageal transit, gastric emptying",Phagocytosis by RES macrophages,,Proximal colon (oral) and liver (IV),IT (isomeric transition),140,6.03 hr
+Technetium-99m,Generator,Technetium-99m Sulfur colloid (filtered),Lymphoscintigraphy,Transport via lymphatics following interstitial injection,,,IT (isomeric transition),140,6.03 hr
+Technetium-99m,Generator,Technetium-99m Tetrofosmin,Myocardial perfusion,Passive diffusion and mitochondrial uptake,,,IT (isomeric transition),140,6.03 hr
+Indium-111,Cyclotron,Indium-111 DTPA (diethylenetriamine pentaacetic acid),"Cerebrospinal fluid (CSF) flow, gastric liquid emptying","CSF flow (injected intrathecally), extracellular space (oral for gastric studies)",,,EC (electron capture),"172, 247",67 hr
+Indium-111,Cyclotron,Indium-111 Oxine labeled white cells,Infection,"WBC localization via chemotaxis, then uptake via phagocytosis","Spleen, liver, bones, lung (first 4 hours)",Spleen,EC (electron capture),"172, 247",67 hr
+Indium-111,Cyclotron,Indium-111 Pentetreotide,Somatostatin receptor tumors,Somatostatin receptor binding,"Spleen, liver, bone marrow, bladder,
+and bowel",Spleen,EC (electron capture),"172, 247",67 hr
+Iodine-123,Cyclotron,Iodine-123 Sodium,Thyroid,Trapped in thyroid tissue via sodium/iodide symporter and incorporated into thyroglobulin,"Thyroid, salivary glands, bowel, urinary system",,EC (electron capture),159,13 hr
+Iodine-123,Cyclotron,Iodine-123 MIBG (metaiodobenzylguanidine),"Pheochromocytoma, neuroblastoma, medullary thyroid carcinoma, adrenal medullary, neural crest tumors","Uptake via norepinephrine transporters, stored in neurosecretory granules.",,Bladder (if thyroid appropriately blocked),EC (electron capture),159,13 hr
+Iodine-131,Nuclear reactor/fission,Iodine-131 Sodium,Thyroid cancer,Trapped in thyroid tissue via sodium/iodide symporter and incorporated into thyroglobulin,"Thyroid, salivary glands, bowel, urinary system",,β- (electron) decay,364,8.06 day
+Xenon-133,Nuclear reactor/fission,Xenon-133 Gas,Lung ventilation,Inhaled gas – reflects regional ventilation,,,β- (electron) decay,81,5.25 day
+Thallium-201,Cyclotron,Thallium-201 Chloride,Myocardial perfusion,Transported across the myocardial cell membrane via the Na+–K+ ATPase pump,"Myocardium, skeletal muscle, GI tract, liver, kidneys",Renal cortex,EC (electron capture),"135, 167",73 hr
+Carbon-11,Cyclotron,Carbon-11 Acetate,Prostate,Fatty acid analog – enters TCA cycle,,,β+ (positron) decay,511,20.3 min
+Nitrogen-13,Cyclotron,Nitrogen-13 Ammonia,Cardiac perfusion,Active transport via myocardial Na+/K+ ATPase,,,β+ (positron) decay,511,10 min
+Rubidium-82,Generator,Rubidium-82 Chloride,Myocardial perfusion,Potassium analog – active transport into myocardium,,,EC (electron capture) and β+ (positron) decay,511,1.3 min
+Cobalt-57,Cyclotron,,,,,,EC (electron capture),"122, 136",270 day
+Cesium-137,Nuclear reactor/fission,,,,,,β- (electron) decay,660,30 yr
+Molybdenum-99,Nuclear reactor/fission,,,,,,β- (electron) decay,"181, 740, 778",66.7 hr
+Samarium-153,Nuclear reactor/fission,Samarium-153 Lexidronam,Treatment of bone mets.,Localizes to areas of increased bone turnover.,,,β- (electron) decay,103,46 hr
+Strontium-89,Nuclear reactor/fission,Strontium-89 Chloride,Treatment of bone mets.,Localizes to areas of increased bone turnover.,,,β- (electron) decay,1491 (beta),51 day
+Radium-223,Generator,Radium-223 Dichloride,Treatment of bone mets. Survival benefit in prostate cancer.,Localizes to areas of increased bone turnover.,,,α decay,5200-5800,11.4 day
+Lutetium-77,Cyclotron,Lutetium-77 vipivotide tetraxetan (pluvicto),Treats PSMA positive prostate cancer.,,,,β- (electron) decay,"176, 384, 497",6.7 day
+Lutetium-77,Cyclotron,Lutetium-77 Dototate,Treats neuroendocrine tumors.,,,,β- (electron) decay,"176, 384, 497",6.7 day
+Yttrium-90,Nuclear reactor/fission,Yttrium-90 Chloride,Treatment. Radioembolization of liver tumors or refractory NH-lymphoma.,,,,β- (electron) decay,2284 (beta),64 hr
