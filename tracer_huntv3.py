@@ -21,7 +21,7 @@ st.set_page_config(page_title="NucMed Trivia Trainer", page_icon="☢️", layou
 @st.cache_data
 def load_data(uploaded_file=None):
     df = pd.read_csv(uploaded_file) if uploaded_file else pd.read_csv(
-        "radionuclides_radiopharmaceuticals_master.csv")
+        "radionuclides_info.csv")
     df.columns = df.columns.str.strip()
     df = df.reset_index().rename(columns={"index": "__row_id"})
     return df
