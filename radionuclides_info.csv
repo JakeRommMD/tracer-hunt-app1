@@ -33,8 +33,8 @@ Thallium-201,Cyclotron,Thallium-201 Chloride,Myocardial perfusion,Transported ac
 Carbon-11,Cyclotron,Carbon-11 Acetate,Prostate,Fatty acid analog – enters TCA cycle,,,β+ (positron) decay,511,20.3 min
 Nitrogen-13,Cyclotron,Nitrogen-13 Ammonia,Cardiac perfusion,Active transport via myocardial Na+/K+ ATPase,,,β+ (positron) decay,511,10 min
 Rubidium-82,Generator,Rubidium-82 Chloride,Myocardial perfusion,Potassium analog – active transport into myocardium,,,EC (electron capture) and β+ (positron) decay,511,1.3 min
-Cobalt-57,Cyclotron,,QC and calibration,None/not really used,,,EC (electron capture),"122, 136",270 day
-Cesium-137,Nuclear reactor/fission,,QC and calibration,None/not really used,,,β- (electron) decay,660,30 yr
+Cobalt-57,Cyclotron,,QC and calibration (accuracy),None/not really used,,,EC (electron capture),"122, 136",270 day
+Cesium-137,Nuclear reactor/fission,,QC and calibration (constancy AND accuracy),None/not really used,,,β- (electron) decay,660,30 yr
 Molybdenum-99,Nuclear reactor/fission,,Parent isotope to Tc-99m,None/not really used,,,β- (electron) decay,"181, 740, 778",66.7 hr
 Samarium-153,Nuclear reactor/fission,Samarium-153 Lexidronam,Treatment of bone mets.,Localizes to areas of increased bone turnover.,,,β- (electron) decay,103,46 hr
 Strontium-89,Nuclear reactor/fission,Strontium-89 Chloride,Treatment of bone mets.,Localizes to areas of increased bone turnover.,,,β- (electron) decay,1491 (beta),51 day
