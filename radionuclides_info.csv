@@ -18,7 +18,7 @@ Technetium-99m,Generator,Technetium-99m MAG3 (mercaptoacetyltriglycine),Renal,Tu
 Technetium-99m,Generator,Technetium-99m Mebrofenin,Biliary,Hepatocyte uptake and biliary excretion,,,IT (isomeric transition),140,6.03 hr
 Technetium-99m,Generator,Technetium-99m Pertechnetate,"Thyroid, salivary glands, Meckel diverticulum, testicular",Transported into glands via sodium-iodide symporter (ie; trapped but not organified),,Stomach,IT (isomeric transition),140,6.03 hr
 Technetium-99m,Generator,Technetium-99m Sestamibi,"Myocardial perfusion, parathyroid, breast",Passive diffusion and mitochondrial uptake,,Proximal colon,IT (isomeric transition),140,6.03 hr
-Technetium-99m,Generator,Technetium-99m Sulfur colloid,"Liver/spleen, red bone marrow, esophageal transit, gastric emptying",Phagocytosis by RES macrophages,,Proximal colon (oral) and liver (IV),IT (isomeric transition),140,6.03 hr
+Technetium-99m,Generator,Technetium-99m Sulfur colloid,"Liver/spleen, red bone marrow, esophageal transit, gastric emptying",Phagocytosis by RES macrophages,,Proximal colon (oral) and spleen (IV),IT (isomeric transition),140,6.03 hr
 Technetium-99m,Generator,Technetium-99m Sulfur colloid (filtered),Lymphoscintigraphy,Transport via lymphatics following interstitial injection,,,IT (isomeric transition),140,6.03 hr
 Technetium-99m,Generator,Technetium-99m Tetrofosmin,Myocardial perfusion,Passive diffusion and mitochondrial uptake,,,IT (isomeric transition),140,6.03 hr
 Indium-111,Cyclotron,Indium-111 DTPA (diethylenetriamine pentaacetic acid),"Cerebrospinal fluid (CSF) flow, gastric liquid emptying","CSF flow (injected intrathecally), extracellular space (oral for gastric studies)",,,EC (electron capture),"172, 247",67 hr
@@ -33,12 +33,12 @@ Thallium-201,Cyclotron,Thallium-201 Chloride,Myocardial perfusion,Transported ac
 Carbon-11,Cyclotron,Carbon-11 Acetate,Prostate,Fatty acid analog – enters TCA cycle,,,β+ (positron) decay,511,20.3 min
 Nitrogen-13,Cyclotron,Nitrogen-13 Ammonia,Cardiac perfusion,Active transport via myocardial Na+/K+ ATPase,,,β+ (positron) decay,511,10 min
 Rubidium-82,Generator,Rubidium-82 Chloride,Myocardial perfusion,Potassium analog – active transport into myocardium,,,EC (electron capture) and β+ (positron) decay,511,1.3 min
-Cobalt-57,Cyclotron,,,,,,EC (electron capture),"122, 136",270 day
-Cesium-137,Nuclear reactor/fission,,,,,,β- (electron) decay,660,30 yr
-Molybdenum-99,Nuclear reactor/fission,,,,,,β- (electron) decay,"181, 740, 778",66.7 hr
+Cobalt-57,Cyclotron,,QC and calibration,None/not really used,,,EC (electron capture),"122, 136",270 day
+Cesium-137,Nuclear reactor/fission,,QC and calibration,None/not really used,,,β- (electron) decay,660,30 yr
+Molybdenum-99,Nuclear reactor/fission,,Parent isotope to Tc-99m,None/not really used,,,β- (electron) decay,"181, 740, 778",66.7 hr
 Samarium-153,Nuclear reactor/fission,Samarium-153 Lexidronam,Treatment of bone mets.,Localizes to areas of increased bone turnover.,,,β- (electron) decay,103,46 hr
 Strontium-89,Nuclear reactor/fission,Strontium-89 Chloride,Treatment of bone mets.,Localizes to areas of increased bone turnover.,,,β- (electron) decay,1491 (beta),51 day
 Radium-223,Generator,Radium-223 Dichloride,Treatment of bone mets. Survival benefit in prostate cancer.,Localizes to areas of increased bone turnover.,,,α decay,5200-5800,11.4 day
-Lutetium-77,Cyclotron,Lutetium-77 vipivotide tetraxetan (pluvicto),Treats PSMA positive prostate cancer.,,,,β- (electron) decay,"176, 384, 497",6.7 day
-Lutetium-77,Cyclotron,Lutetium-77 Dototate,Treats neuroendocrine tumors.,,,,β- (electron) decay,"176, 384, 497",6.7 day
+Lutetium-77,Cyclotron,Lutetium-77 vipivotide tetraxetan (pluvicto),Treats PSMA positive prostate cancer.,Localized to PSMA receptor positive tissues,,,β- (electron) decay,"176, 384, 497",6.7 day
+Lutetium-77,Cyclotron,Lutetium-77 Dototate,Treats neuroendocrine tumors.,Somatostatin receptor binding (treatment),,,β- (electron) decay,"176, 384, 497",6.7 day
 Yttrium-90,Nuclear reactor/fission,Yttrium-90 Chloride,Treatment. Radioembolization of liver tumors or refractory NH-lymphoma.,,,,β- (electron) decay,2284 (beta),64 hr

@@ -70,7 +70,7 @@ if "deck" not in st.session_state:
 # ---------------------------------------------------------------------
 # Sidebar
 # ---------------------------------------------------------------------
-game = st.sidebar.selectbox("Choose a game", ["Flashcards", "Multiple Choice", "Match‑Up"])
+game = st.sidebar.selectbox("Choose a game", ["Flashcards", "Multiple Choice", "Multiple Match"])
 if st.sidebar.button("🔄 Reset All"):
     init_flash(); reset_mcq(); init_match(); st.session_state.seen = {}; st.session_state.celebrated = set()
 
@@ -150,7 +150,7 @@ elif game == "Multiple Choice":
 # MATCH‑UP  (unchanged logic, no progress bar—game has its own score)
 # ---------------------------------------------------------------------
 else:
-    st.header("Match‑Up 🧩")
+    st.header("Multiple Match 🧩")
 
     base_col = st.sidebar.selectbox("Rows show:", columns,
                                     index=columns.index("Radiopharmaceutical ") if "Radiopharmaceutical " in columns else 0)
