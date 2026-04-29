@@ -1,0 +1,19 @@
+item_id|radionuclide|prompt|correct_option|explanation|difficulty
+HL_0001|Tc-99m|Which physical half-life is correct?|~6 hours|Tc-99m has a physical half-life of approximately 6 hours. This is one reason it is so useful for routine diagnostic nuclear medicine.|1
+HL_0002|F-18|Which physical half-life is correct?|~110 minutes|F-18 has a physical half-life of approximately 110 minutes. This is long enough for regional distribution but short enough for PET imaging logistics.|1
+HL_0003|Ga-68|Which physical half-life is correct?|~68 minutes|Ga-68 has a physical half-life of approximately 68 minutes. This fits well with generator-based PET imaging workflows.|1
+HL_0004|I-123|Which physical half-life is correct?|~13 hours|I-123 has a physical half-life of approximately 13 hours. It is commonly used for diagnostic thyroid imaging and MIBG imaging.|1
+HL_0005|I-131|Which physical half-life is correct?|~8 days|I-131 has a physical half-life of approximately 8 days. Its longer half-life and beta emission make it useful for thyroid therapy.|1
+HL_0006|Lu-177|Which physical half-life is correct?|~6.7 days|Lu-177 has a physical half-life of approximately 6.7 days. It is used in targeted radionuclide therapies such as Lu-177 DOTATATE and Lu-177 PSMA agents.|1
+HL_0007|Y-90|Which physical half-life is correct?|~64 hours|Y-90 has a physical half-life of approximately 64 hours. It is a high-energy beta emitter used in therapies such as hepatic radioembolization.|1
+HL_0008|Ra-223|Which physical half-life is correct?|~11.4 days|Ra-223 has a physical half-life of approximately 11.4 days. It is an alpha-emitting calcium mimetic used for osteoblastic bone metastases from prostate cancer.|1
+HL_0009|Rb-82|Which physical half-life is correct?|~75 seconds|Rb-82 has a very short physical half-life of approximately 75 seconds. It is generator-produced and used for PET myocardial perfusion imaging.|1
+HL_0010|C-11|Which physical half-life is correct?|~20 minutes|C-11 has a physical half-life of approximately 20 minutes. This short half-life generally requires an on-site or nearby cyclotron.|2
+HL_0011|N-13|Which physical half-life is correct?|~10 minutes|N-13 has a physical half-life of approximately 10 minutes. N-13 ammonia is used for PET myocardial perfusion imaging at centers with cyclotron access.|2
+HL_0012|O-15|Which physical half-life is correct?|~2 minutes|O-15 has a physical half-life of approximately 2 minutes. Its very short half-life requires on-site cyclotron production.|3
+HL_0013|In-111|Which physical half-life is correct?|~67 hours|In-111 has a physical half-life of approximately 67 hours. It has been used for labeled leukocyte imaging and somatostatin receptor imaging.|2
+HL_0014|Tl-201|Which physical half-life is correct?|~73 hours|Tl-201 has a physical half-life of approximately 73 hours. It has historically been used for myocardial perfusion imaging.|2
+HL_0015|Ga-67|Which physical half-life is correct?|~78 hours|Ga-67 has a physical half-life of approximately 78 hours. It has been used for infection inflammation and tumor imaging.|2
+HL_0016|Xe-133|Which physical half-life is correct?|~5.3 days|Xe-133 has a physical half-life of approximately 5.3 days. It has been used as a gas for pulmonary ventilation imaging.|2
+HL_0018|Mo-99|Which physical half-life is correct?|~66 hours|Mo-99 has a physical half-life of approximately 66 hours. It is the parent radionuclide in Mo-99/Tc-99m generators.|1
+HL_0021|Cu-64|Which physical half-life is correct?|~12.7 hours|Cu-64 has a physical half-life of approximately 12.7 hours. It is a PET radionuclide with theranostic interest.|3

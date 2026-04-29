@@ -1,0 +1,19 @@
+item_id|radionuclide|prompt|correct_option|explanation|difficulty|distractor_group
+DM_0001|Tc-99m|Which decay mode is correct?|Isomeric transition|Tc-99m decays by isomeric transition to Tc-99 with emission of a 140 keV gamma photon.|1|isomeric_transition
+DM_0002|F-18|Which decay mode is correct?|Positron emission|F-18 decays by positron emission, making it useful for PET imaging.|1|positron_emission
+DM_0003|Ga-68|Which decay mode is correct?|Positron emission|Ga-68 decays primarily by positron emission, making it useful for PET imaging with agents such as DOTATATE.|1|positron_emission
+DM_0004|I-123|Which decay mode is correct?|Electron capture|I-123 decays primarily by electron capture and emits gamma photons useful for diagnostic thyroid and MIBG imaging.|1|electron_capture
+DM_0005|I-131|Which decay mode is correct?|Beta-minus decay|I-131 decays by beta-minus emission and also emits gamma photons. The beta emission is useful for thyroid therapy.|1|beta_minus
+DM_0006|Lu-177|Which decay mode is correct?|Beta-minus decay|Lu-177 decays by beta-minus emission and also emits gamma photons that can be used for imaging and dosimetry.|1|beta_minus
+DM_0007|Y-90|Which decay mode is correct?|Beta-minus decay|Y-90 decays by high-energy beta-minus emission, making it useful for therapeutic applications such as radioembolization.|1|beta_minus
+DM_0008|Ra-223|Which decay mode is correct?|Alpha decay|Ra-223 is an alpha-emitting therapeutic radionuclide used for osteoblastic bone metastases from prostate cancer.|1|alpha_decay
+DM_0009|Rb-82|Which decay mode is correct?|Positron emission|Rb-82 decays by positron emission and is used for PET myocardial perfusion imaging.|1|positron_emission
+DM_0010|C-11|Which decay mode is correct?|Positron emission|C-11 decays by positron emission and is used for PET radiotracers that usually require an on-site or nearby cyclotron.|2|positron_emission
+DM_0011|N-13|Which decay mode is correct?|Positron emission|N-13 decays by positron emission. N-13 ammonia is used for PET myocardial perfusion imaging at centers with cyclotron access.|2|positron_emission
+DM_0012|O-15|Which decay mode is correct?|Positron emission|O-15 decays by positron emission and has a very short physical half-life, requiring on-site cyclotron production.|3|positron_emission
+DM_0013|In-111|Which decay mode is correct?|Electron capture|In-111 decays by electron capture and emits gamma photons used for gamma camera imaging.|2|electron_capture
+DM_0014|Tl-201|Which decay mode is correct?|Electron capture|Tl-201 decays by electron capture, producing mercury x-rays that are important for imaging.|2|electron_capture
+DM_0015|Ga-67|Which decay mode is correct?|Electron capture|Ga-67 decays by electron capture and emits multiple gamma photons used for gamma camera imaging.|2|electron_capture
+DM_0016|Xe-133|Which decay mode is correct?|Beta-minus decay|Xe-133 decays by beta-minus emission and emits an 81 keV gamma photon useful for ventilation imaging.|2|beta_minus
+DM_0018|Mo-99|Which decay mode is correct?|Beta-minus decay|Mo-99 decays by beta-minus emission to technetium isotopes and serves as the parent radionuclide in Mo-99/Tc-99m generators.|1|beta_minus
+DM_0021|Cu-64|Which decay mode is correct?|Mixed decay: positron emission, beta-minus emission, and electron capture|Cu-64 has a mixed decay profile including positron emission, beta-minus emission, and electron capture, which contributes to its theranostic interest.|3|mixed_beta_plus_beta_minus_ec

@@ -236,7 +236,7 @@ else:
                     correct_cells += 1
         st.success(f"Score: {correct_cells} / {total_cells}")
         if st.button("Retry 🔄"):
-            init_match(shuffle_rows=False)
+            init_match(shuffle=False)
             st.rerun()
             
     st.info("Click Shuffle on the side bar to get a new batch to match!")

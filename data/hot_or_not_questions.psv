@@ -1,0 +1,49 @@
+question_id|radionuclide|fact_type|prompt|correct_option|incorrect_option|explanation|difficulty|tags
+HON_0001|Tc-99m|emission|Which emission is correct?|140 keV gamma|511 keV annihilation photons|Tc-99m emits a 140 keV gamma photon after isomeric transition. 511 keV photons are associated with positron annihilation.|1
+HON_0002|Tc-99m|half_life|Which half-life is correct?|~6 hours|~8 days|Tc-99m has a physical half-life of approximately 6 hours.|1
+HON_0003|Tc-99m|decay_mode|Which decay mode is correct?|Isomeric transition|Beta-minus decay|Tc-99m decays by isomeric transition to Tc-99 with emission of a 140 keV gamma photon.|1
+HON_0004|Tc-99m|generation|Which production method is correct?|Mo-99/Tc-99m generator|Ge-68/Ga-68 generator|Tc-99m is commonly obtained from a Mo-99/Tc-99m generator.|1
+HON_0005|F-18|emission|Which emission is correct?|Positron emission|140 keV gamma|F-18 is a positron emitter. Positron annihilation produces paired 511 keV photons detected in PET.|1
+HON_0006|F-18|half_life|Which half-life is correct?|~110 minutes|~6 hours|F-18 has a physical half-life of approximately 110 minutes.|1
+HON_0007|F-18|decay_mode|Which decay mode is correct?|Positron emission|Isomeric transition|F-18 decays by positron emission making it useful for PET imaging.
+HON_0008|F-18|generation|Which production method is correct?|Cyclotron|Mo-99/Tc-99m generator|F-18 is cyclotron-produced rather than eluted from a Mo-99/Tc-99m generator.|1
+HON_0009|Ga-68|emission|Which emission is correct?|Positron emission|Beta-minus emission|Ga-68 is a positron emitter used for PET imaging.|1
+HON_0010|Ga-68|half_life|Which half-life is correct?|~68 minutes|~8 days|Ga-68 has a physical half-life of approximately 68 minutes.|1|
+HON_0011|Ga-68|decay_mode|Which decay mode is correct?|Positron emission|Isomeric transition|Ga-68 decays by positron emission and is used for PET radiopharmaceuticals such as DOTATATE.|1
+HON_0012|Ga-68|generation|Which production method is correct?|Ge-68/Ga-68 generator|Mo-99/Tc-99m generator|Ga-68 can be obtained from a Ge-68/Ga-68 generator.|1
+HON_0013|I-123|emission|Which emission is correct?|159 keV gamma|511 keV annihilation photons|I-123 emits a principal gamma photon around 159 keV useful for gamma camera imaging.|2
+HON_0014|I-123|half_life|Which half-life is correct?|~13 hours|~8 days|I-123 has a physical half-life of approximately 13 hours.|2
+HON_0015|I-123|decay_mode|Which decay mode is correct?|Electron capture|Beta-minus decay|I-123 decays primarily by electron capture and is used diagnostically for thyroid imaging and MIBG imaging.|2
+HON_0016|I-123|generation|Which production method is correct?|Cyclotron|Mo-99/Tc-99m generator|I-123 is cyclotron-produced.|2
+HON_0017|I-131|emission|Which emission profile is correct?|Beta-minus plus gamma emission|Pure positron emission|I-131 emits beta particles and gamma photons. The beta emission is useful therapeutically and the gamma emission allows imaging.|2
+HON_0018|I-131|half_life|Which half-life is correct?|~8 days|~6 hours|I-131 has a physical half-life of approximately 8 days.|2
+HON_0019|I-131|decay_mode|Which decay mode is correct?|Beta-minus decay|Electron capture|I-131 decays by beta-minus emission and also emits gamma photons.|2
+HON_0020|I-131|common_use|Which use is correct?|Thyroid therapy and thyroid cancer treatment|Bone scan perfusion imaging|I-131 is used for treatment of hyperthyroidism and differentiated thyroid cancer.|2
+HON_0021|In-111|emission|Which emission is correct?|173 and 247 keV gamma photons|140 keV gamma only|In-111 emits gamma photons commonly listed around 173 and 247 keV.|3
+HON_0022|In-111|half_life|Which half-life is correct?|~67 hours|~20 minutes|In-111 has a physical half-life of approximately 67 hours.|3
+HON_0023|In-111|decay_mode|Which decay mode is correct?|Electron capture|Positron emission|In-111 decays by electron capture.|3
+HON_0024|In-111|common_use|Which use is correct?|Labeled leukocyte imaging and octreotide imaging|Hepatobiliary scintigraphy|In-111 has been used for labeled leukocyte imaging and In-111 octreotide imaging.|3
+HON_0025|Tl-201|emission|Which imaging emission is correct?|Mercury x-rays around 69-83 keV|511 keV annihilation photons|Tl-201 imaging largely uses characteristic mercury x-rays around 69-83 keV.|3
+HON_0026|Tl-201|half_life|Which half-life is correct?|~73 hours|~20 minutes|Tl-201 has a physical half-life of approximately 73 hours.|3
+HON_0027|Tl-201|decay_mode|Which decay mode is correct?|Electron capture|Beta-minus decay|Tl-201 decays by electron capture.|3
+HON_0028|Tl-201|common_use|Which use is correct?|Myocardial perfusion imaging|Pulmonary ventilation imaging|Tl-201 has historically been used for myocardial perfusion imaging.|3
+HON_0029|Xe-133|emission|Which emission is correct?|81 keV gamma|140 keV gamma|Xe-133 emits an 81 keV gamma photon and has been used for ventilation imaging.|3
+HON_0030|Xe-133|half_life|Which half-life is correct?|~5.3 days|~68 minutes|Xe-133 has a physical half-life of approximately 5.3 days.|3
+HON_0031|Xe-133|common_use|Which use is correct?|Pulmonary ventilation imaging|Bone metastasis imaging|Xe-133 is a gas used for pulmonary ventilation imaging.|2
+HON_0032|Xe-133|decay_mode|Which decay mode is correct?|Beta-minus decay|Positron emission|Xe-133 decays by beta-minus emission and emits gamma photons useful for imaging.|3
+HON_0033|Rb-82|emission|Which emission is correct?|Positron emission|Isomeric transition|Rb-82 is a positron emitter used for PET myocardial perfusion imaging.|3
+HON_0034|Rb-82|half_life|Which half-life is correct?|~75 seconds|~110 minutes|Rb-82 has a very short physical half-life of approximately 75 seconds.|3
+HON_0035|Rb-82|generation|Which production method is correct?|Sr-82/Rb-82 generator|Mo-99/Tc-99m generator|Rb-82 is obtained from a Sr-82/Rb-82 generator.|3
+HON_0036|Rb-82|common_use|Which use is correct?|PET myocardial perfusion imaging|Thyroid ablation|Rb-82 is used for PET myocardial perfusion imaging.|3
+HON_0037|Lu-177|emission|Which emission profile is correct?|Beta-minus therapy with gamma emissions|Positron-only diagnostic imaging|Lu-177 is a beta-minus emitter used therapeutically and also emits gamma photons that permit imaging and dosimetry.|4
+HON_0038|Lu-177|half_life|Which half-life is correct?|~6.7 days|~68 minutes|Lu-177 has a physical half-life of approximately 6.7 days.|4
+HON_0039|Lu-177|decay_mode|Which decay mode is correct?|Beta-minus decay|Electron capture|Lu-177 decays by beta-minus emission.|4
+HON_0040|Lu-177|common_use|Which use is correct?|Theranostic treatment such as DOTATATE or PSMA therapy|Pulmonary ventilation imaging|Lu-177 is used in targeted radionuclide therapies including Lu-177 DOTATATE and Lu-177 PSMA agents.|4
+HON_0041|Y-90|emission|Which emission is correct?|High-energy beta-minus emission|140 keV gamma|Y-90 is primarily a high-energy beta-minus emitter used for therapy.|4
+HON_0042|Y-90|half_life|Which half-life is correct?|~64 hours|~6 hours|Y-90 has a physical half-life of approximately 64 hours.|4
+HON_0043|Y-90|decay_mode|Which decay mode is correct?|Beta-minus decay|Electron capture|Y-90 decays by beta-minus emission.|4
+HON_0044|Y-90|common_use|Which use is correct?|Radioembolization therapy|Bone scan imaging|Y-90 microspheres are used for hepatic radioembolization therapy.|4
+HON_0045|Ra-223|emission|Which emission is correct?|Alpha emission|Positron emission|Ra-223 is an alpha emitter used for treatment of osteoblastic bone metastases from prostate cancer.|5
+HON_0046|Ra-223|half_life|Which half-life is correct?|~11.4 days|~75 seconds|Ra-223 has a physical half-life of approximately 11.4 days.|5
+HON_0047|Ra-223|decay_mode|Which decay mode is correct?|Alpha decay|Isomeric transition|Ra-223 is an alpha-emitting therapeutic radionuclide.|5
+HON_0048|Ra-223|common_use|Which use is correct?|Treatment of bone metastases from prostate cancer|Renal tubular function imaging|Ra-223 is used for symptomatic bone-predominant metastatic prostate cancer without known visceral metastatic disease.|5
